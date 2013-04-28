@@ -3,9 +3,16 @@
     %h3 Styles
     %ul
       - Hat::STYLES.each do |style|
-        %li= style
-
+        %li
+          %label
+            = check_box_tag 'style[]', style, params[:style].include?(style)
+            = style
+            = "(#{@hat_styles[style].to_i})"
     %h3 Colors
     %ul
       - Hat::COLORS.each do |color|
-        %li= color
+        %li
+          %label
+            = check_box_tag 'color[]', color, params[:color].include?(color)
+            = color
+            = "(#{@hat_colors[color].to_i})" 

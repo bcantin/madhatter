@@ -1,7 +1,10 @@
-%h2 Madhatter!
+= form_tag hats_path, :method => 'get', id: 'search', class: "form-search" do 
+  = text_field_tag :search, params[:search], class: "span3"
+  = submit_tag 'Search', class: 'btn'
 
-.row
-  = render "/shared/sidebar"
+  .row
+    = render "/shared/sidebar"
 
-  .span8
-    = render @hats
+    .span8
+      = paginate @hats
+      = render @hats

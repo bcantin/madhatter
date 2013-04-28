@@ -1,7 +1,11 @@
-// Place all the styles related to the hats controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#main { 
+  padding-top: 15px; 
+}
 
 #sidebar {
+  border-right: 1px dotted #ccc;
+}
 
+ul li {
+  list-style-type: none;
 }
