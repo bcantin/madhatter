@@ -25,7 +25,7 @@ rake db:setup (create / load schema / db:seed)
 
 # Branches
 
-There is a 'before' branch that has the basic application with no 
+There is a 'before_search' branch that has the basic application with no 
 search features 
 
-There is an 'after' branch (also the master branch) that has the finished search features
+There is an 'after_search' branch (also the master branch) that has the finished search features
