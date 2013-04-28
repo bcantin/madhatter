@@ -1,0 +1,11 @@
+.span2
+  #sidebar
+    %h3 Styles
+    %ul
+      - Hat::STYLES.each do |style|
+        %li= style
+
+    %h3 Colors
+    %ul
+      - Hat::COLORS.each do |color|
+        %li= color
