@@ -3,7 +3,7 @@
 This application was created to help develpers get familiar with the Qbox API
 using the Ruby Tire library
 
-It uses the mysql2 library as well, so please have mysql running on your local dev box.
+It uses sqlite3 for a database.
 
 # Getting Started
 
